@@ -1,4 +1,4 @@
-# Java 21 - Quarkus 3.9 - Kotlin - Hibernate
+# Java 21 - Javalin 6 - Hibernate 7
 
 ## Requirements
 
