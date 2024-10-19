@@ -1,8 +1,8 @@
-package com.brucemelo;
+package com.brucemelo.app;
 
-import com.brucemelo.web.model.NewCourse;
-import com.brucemelo.web.model.NewRegister;
-import com.brucemelo.web.model.NewStudent;
+import com.brucemelo.app.web.model.NewCourse;
+import com.brucemelo.app.web.model.NewRegister;
+import com.brucemelo.app.web.model.NewStudent;
 import io.javalin.Javalin;
 import io.javalin.http.HttpStatus;
 import io.javalin.testtools.JavalinTest;

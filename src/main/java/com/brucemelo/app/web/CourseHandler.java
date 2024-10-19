@@ -1,10 +1,10 @@
-package com.brucemelo.web;
+package com.brucemelo.app.web;
 
-import com.brucemelo.domain.Course;
-import com.brucemelo.domain.CourseQueries_;
-import com.brucemelo.infrastructure.AppHibernate;
-import com.brucemelo.web.model.NewCourse;
-import com.brucemelo.web.model.ResultCourse;
+import com.brucemelo.app.domain.Course;
+import com.brucemelo.app.domain.CourseQueries_;
+import com.brucemelo.app.infrastructure.AppHibernate;
+import com.brucemelo.app.web.model.NewCourse;
+import com.brucemelo.app.web.model.ResultCourse;
 import io.javalin.http.Handler;
 import io.javalin.http.HttpStatus;
 

@@ -1,4 +1,4 @@
-package com.brucemelo.web.model;
+package com.brucemelo.app.web.model;
 
 public record NewStudent(String name) {
 }

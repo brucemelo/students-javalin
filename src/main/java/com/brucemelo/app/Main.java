@@ -1,4 +1,4 @@
-package com.brucemelo;
+package com.brucemelo.app;
 
 public class Main {
 

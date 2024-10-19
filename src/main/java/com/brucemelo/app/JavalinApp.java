@@ -1,10 +1,9 @@
-package com.brucemelo;
+package com.brucemelo.app;
 
-import com.brucemelo.web.CourseHandler;
-import com.brucemelo.web.RegisterHandler;
-import com.brucemelo.web.StudentHandler;
+import com.brucemelo.app.web.CourseHandler;
+import com.brucemelo.app.web.RegisterHandler;
+import com.brucemelo.app.web.StudentHandler;
 import io.javalin.Javalin;
-import io.javalin.http.HttpStatus;
 
 import static io.javalin.apibuilder.ApiBuilder.get;
 import static io.javalin.apibuilder.ApiBuilder.path;

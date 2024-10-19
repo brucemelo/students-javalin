@@ -1,6 +1,6 @@
-package com.brucemelo.web.model;
+package com.brucemelo.app.web.model;
 
-import com.brucemelo.domain.Student;
+import com.brucemelo.app.domain.Student;
 
 import java.util.List;
 

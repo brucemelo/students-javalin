@@ -1,8 +1,7 @@
-package com.brucemelo;
+package com.brucemelo.app;
 
-import com.brucemelo.JavalinApp;
-import com.brucemelo.web.model.NewCourse;
-import com.brucemelo.web.model.ResultCourse;
+import com.brucemelo.app.web.model.NewCourse;
+import com.brucemelo.app.web.model.ResultCourse;
 import io.javalin.Javalin;
 import io.javalin.http.HttpStatus;
 import io.javalin.json.JavalinJackson;

@@ -1,10 +1,10 @@
-package com.brucemelo.web;
+package com.brucemelo.app.web;
 
-import com.brucemelo.domain.Student;
-import com.brucemelo.domain.Student_;
-import com.brucemelo.infrastructure.AppHibernate;
-import com.brucemelo.web.model.NewStudent;
-import com.brucemelo.web.model.ResultStudent;
+import com.brucemelo.app.domain.Student;
+import com.brucemelo.app.domain.Student_;
+import com.brucemelo.app.infrastructure.AppHibernate;
+import com.brucemelo.app.web.model.NewStudent;
+import com.brucemelo.app.web.model.ResultStudent;
 import io.javalin.http.Handler;
 import io.javalin.http.HttpStatus;
 import org.hibernate.query.criteria.CriteriaDefinition;

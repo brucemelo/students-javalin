@@ -1,4 +1,4 @@
-package com.brucemelo.domain;
+package com.brucemelo.app.domain;
 
 import org.hibernate.StatelessSession;
 import org.hibernate.annotations.processing.Find;
