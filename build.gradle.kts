@@ -2,7 +2,7 @@ plugins {
     id("java")
 }
 
-group = "com.brucemelo"
+group = "com.brucemelo.app"
 
 repositories {
     mavenCentral()
