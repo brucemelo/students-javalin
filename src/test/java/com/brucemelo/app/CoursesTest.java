@@ -10,6 +10,8 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
 class CoursesTest {
@@ -21,13 +23,17 @@ class CoursesTest {
     @DisplayName("Should save and list courses")
     void test1() {
         JavalinTest.test(app, (server, client) -> {
-            var newValue = new NewCourse("Course1");
-            var postResponse = client.post("/courses", newValue);
+            var newCourse = new NewCourse("Course1");
+            var postResponse = client.post("/courses", newCourse);
             assertEquals(postResponse.code(), HttpStatus.CREATED.getCode());
-            var getResponse = client.get("/courses");
-            assertEquals(getResponse.code(),HttpStatus.OK.getCode());
-            ResultCourse result = javalinJackson.fromJsonString(getResponse.body().string(), ResultCourse.class);
-            assertEquals(result.courses(). stream().findFirst().get().getName(), newValue.name());
+            var response = client.get("/courses");
+            assertEquals(response.code(), HttpStatus.OK.getCode());
+            assertNotNull(response.body());
+            ResultCourse result = javalinJackson.fromJsonString(response.body().string(), ResultCourse.class);
+            assertNotNull(result.courses());
+            var firstCourse = result.courses().stream().findFirst();
+            assertTrue(firstCourse.isPresent());
+            assertEquals(firstCourse.get().getName(), newCourse.name());
         });
     }
 
