@@ -18,8 +18,6 @@ class AppHibernateConfig {
         settings.put(AvailableSettings.JAKARTA_JDBC_URL, "jdbc:postgresql://localhost:5432/mydatabase");
         settings.put(AvailableSettings.JAKARTA_JDBC_USER, "sa");
         settings.put(AvailableSettings.JAKARTA_JDBC_PASSWORD, "sa");
-        settings.put(AvailableSettings.SHOW_SQL, true);
-        settings.put(AvailableSettings.FORMAT_SQL, true);
         settings.put(AvailableSettings.HIGHLIGHT_SQL, true);
         settings.put(AvailableSettings.HBM2DDL_AUTO, Action.ACTION_CREATE);
 
